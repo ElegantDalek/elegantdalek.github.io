@@ -3,13 +3,24 @@ body{
 }
 
 header{
-	background-color: teal;
+	margin: 0px;
 	color: white;
+	background-color: black;
 }
 
-h2{
+.btn.btn-primary{
+	text-align: right;
+	background-color: black;
+	margin-top:20px;
+	border: 0px;
 }
 
-h1 {
-	text-align: center;
+.btn.btn-primary:hover{
+	background-color: white;
+	color: black;
+}
+
+
+.main{
+	
 }

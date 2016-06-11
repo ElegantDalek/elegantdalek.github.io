@@ -3,24 +3,56 @@ body{
 }
 
 header{
+	height: 56px;
 	margin: 0px;
 	color: white;
 	background-color: black;
 }
 
-.btn.btn-primary{
-	text-align: right;
+.btn-nav{
+	display: inline;	
+}
+i{
+	
+}
+
+.btn-link li{
+	color: white;
+	list-style-type: none;
+	float: right;
 	background-color: black;
-	margin-top:20px;
-	border: 0px;
 }
 
-.btn.btn-primary:hover{
-	background-color: white;
-	color: black;
+a{
+	text-decoration: none;
+	background-color: black;
+	display: block;
+	padding: 8px;
+	border-radius: 0;
+	color: white;
+
 }
 
+li a{
+	color: white;
+}
+
+li a:hover{
+	background-color: green;
+	color: white;
+}
 
 .main{
 	
+}
+.menu{
+	left: -285px;
+	top:56px;
+	position: fixed;
+	height: 100%;
+	width: 285px;
+	background-color: black;
+}
+.menu li{
+	list-style-type: none;	
 }

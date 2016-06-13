@@ -43,7 +43,7 @@ li a:hover{
 }
 
 .main{
-	
+	color: white;
 }
 .menu{
 	left: -285px;
@@ -52,7 +52,19 @@ li a:hover{
 	height: 100%;
 	width: 285px;
 	background-color: black;
+	margin-left: 0px;
 }
 .menu li{
-	list-style-type: none;	
+	list-style-type: none;
+}
+
+#jum-trip{
+	background-image: url('Alma.jpg');
+	background-size: cover;
+	height: auto;
+	min-height: 100%
+}
+
+.jumbotron{
+
 }

@@ -1,18 +1,22 @@
 var main = function(){
-	$('.btn-menu').click(function(){
-    	$('.menu').animate({
-    		left: "0px"
-    	}, 200);
-    	$(this).addClass('menu-close');
-    	$(this).removeClass('btn-menu');
-    });
+	$('.btn-menu').on('click', function(event){
+		event.preventDefault();
 
-	$('.menu-close').click(function(){
-		$('.menu').animate({
-			left: "-285px"
-		}, 200);
-		$(this).addClass('btn-menu');
-		$(this).removeClass('menu-close');
+		var slideoutMenu = $('.menu');
+		var slideoutMenuWidth = $('.menu').width();
+
+		slideoutMenu.toggleClass("open");
+
+		if (slideoutMenu.hasClass("open")) {
+			slideoutMenu.animate({
+				left: "0px"
+
+			}, 200);
+		} else {
+			slideoutMenu.animate({
+				left: -slideoutMenuWidth
+			}, 200);
+		}
 	});
 
 };

@@ -4,14 +4,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
   </head>
 
-  <body>
+  <body ng-app="myApp">
      <div class="menu">
-        <li><a href="#">Projects</a><li>
-        <li><a href="#">Trips</a><li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="Trips.html">Trips</a><li>
+        <li><a href="Projects">Projects</a></li>
+        <li><a href="Contact">Contact</a></li>
+        <li><a href="About">About</a></li>
     </div>
     <header class="col-sm-12">
       <div class="btn-menu">
@@ -19,36 +20,25 @@
       </div>
       <h3 class="col-sm-8">Theodore Li</h3>
       <div class="btn-link">
-        <li><a class="link" href="wisk.html">WISK</a></li>
         <li><a class="link" href="#">Link</a></li>
-        <li><a class="link" href="#">link</a><li>
+        <li><a class="link" href="#">Link</a></li>
+        <li><a class="link" href="#">Link</a><li>
       </div>
     </header>
 
-    <div class="main">
-      <div class="jumbotron" id="jum-trip">
-        <h1 style = "padding-left: 5vw;">Trips</h1>
-        <h2 style= "padding-left: 5vw;">2015 Summer Road Trip</h2>
+    <div class="main" ng-controller="photoCtrl">
+      <div class="jumbotron" id="jum-trips" ng-repeat="info in infos"  ng-style="{'background-image' : url({{ info.photoURL }})}">
+          <h1 style="padding-Left: 10vh" > {{ info.title }}</h1>
+        <h2 style="padding-Left: 5vh">{{ info.description }}</h2>
       </div>
-      <div class="jumbotron" id="jum-projects">
-        <h1>Projects</h1>
-        <h2>HTML, CSS and JS Website</h2>
-      </div>
-      <div class="jumbotron" id="jum-about">
-        <div class="col-sm-6">
-          <h1>About:</h1>
-          <p>Hi. I am a junior at Macomb Senior High School. This is my website.</p>
-        </div>
-        <div class="col-sm-6">
-          <img src="IMG_20150721_141240.jpg">
-        </div>
-      </div>
+    </div>
 
 
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="app.js"></script>
+    <script src="photoCtrl.js"></script>
   </body>
 
 </html>

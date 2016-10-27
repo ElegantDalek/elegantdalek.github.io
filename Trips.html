@@ -1,0 +1,27 @@
+<!doctype html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Trips.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+
+<body ng-app MyApp>
+    <header class="col-sm-12">
+<!--
+    <div class="btn-menu">
+        <i class="material-icons col-sm-1">arrow-back</i>
+    </div>
+-->
+    <h2 class="col-sm-8">Trips</h2>
+    </header>
+    <div class="main" ng-controller="TripCtrl">
+        <div class="jumbotron" id="year-preview" ng-repeat="trip in trips">
+            <h1>
+                {{ trip.desc }}
+            </h1>
+        </div>
+    </div>
+    <script src="TripCtrl.js"></script>
+</body>
+

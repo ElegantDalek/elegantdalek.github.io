@@ -1,5 +1,6 @@
-var main = function(){
-	$('.btn-menu').on('click', function(event){
+var app = angular.module("myApp", []);
+var main = function () {
+	$('.btn-menu').on('click', function (event) {
 		event.preventDefault();
 
 		var slideoutMenu = $('.menu');

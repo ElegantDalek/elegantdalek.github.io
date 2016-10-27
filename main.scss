@@ -1,0 +1,82 @@
+$font-stack: Helvetica, sans-serif;
+
+
+body{
+	font-family: $font-stack;
+}
+
+header{
+	height: 56px;
+	margin: 0;
+	color: white;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+
+.menu{
+	left: -285px;
+	top:56px;
+	position: fixed;
+	height: 100%;
+	width: 285px;
+	background-color: black;
+	margin-left: 0px;
+    li{
+        list-style-type: none;
+    }
+
+.btn-nav{
+	display: inline;	
+}
+
+.btn-link li{
+	color: white;
+	list-style-type: none;
+	float: right;
+	background-color: black;
+}
+
+a{
+	text-decoration: none;
+	background-color: black;
+	display: block;
+	padding: 8px;
+	border-radius: 0;
+	color: white;
+
+}
+    
+li{
+    a{
+        color: white;
+    }
+    &:hover {
+        background-color: green;
+	color: white;
+    }
+}
+    
+#jum-trip{
+	color: white;
+}
+
+.jumbotron{
+	background-size: cover;
+	max-width: 100%;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: auto;
+	color: white;
+}
+
+#menu-click{
+	text-align: left;
+}
+
+img{
+	max-width: 100%;
+	height: 100vh;
+	width: auto;
+}
